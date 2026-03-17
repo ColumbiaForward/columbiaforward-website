@@ -9,24 +9,24 @@ export const missionAbout: ContentProps = {
   header: {
     title: 'Our Mission',
   },
-  content: 'Artificial intelligence has the power to democratize knowledge by giving people worldwide access to expert-level information, regardless of background or connections. For underprivileged children, AI can open pathways to careers once thought unreachable. However, without proper education, many students mistakenly view AI as sentient or infallible, relying on it as a shortcut rather than a tool. This overreliance risks weakening critical thinking, problem-solving, and academic integrity skills that are essential for long-term learning and personal development.',
+  content: 'Columbia Forward exists to break the cycle of partisan gridlock that has left our community behind. We believe that most Columbians — regardless of political affiliation — share the same core values: safe neighborhoods, great schools, economic opportunity, and a government that works. Our mission is to organize around those shared values, field candidates who answer to residents rather than party bosses, and build coalitions that actually get things done.',
   image: {
     src: kids1,
-    alt: 'Kids learning',
+    alt: 'Columbia residents coming together',
   },
   isReversed: false,
   isAfterContent: false,
 };
 
-// Empowering the Next Generation
+// Empowering the Community
 export const empowermentAbout: ContentProps = {
   header: {
-    title: 'Empowering the Next Generation',
+    title: 'Empowering Our Community',
   },
-  content: 'Our organization aims to educate students on what Artificial intelligence is. With this familiarity, they can use it as a tool for efficient knowledge, understand how to leverage it in the future workforce, whilst also avoiding its dangers.',
+  content: 'Columbia Forward puts power back in the hands of everyday residents. Through town halls, community forums, and open volunteer programs, we give Columbians a genuine seat at the table. Our model is transparent, bottom-up, and citizen-driven — because lasting change starts with the people who live it every day.',
   image: {
     src: kids2,
-    alt: 'Empowering students',
+    alt: 'Community members at a town hall',
   },
   isReversed: true,
   isAfterContent: false,
@@ -35,25 +35,25 @@ export const empowermentAbout: ContentProps = {
 // Partnerships
 export const partnershipsAbout: FeaturesProps = {
   header: {
-    title: 'Partnerships',
+    title: 'Our Partners',
   },
   columns: 2,
   items: [
     {
-      title: 'Aspen Institution',
-      description: 'Partner',
+      title: 'Forward Party USA',
+      description: 'National affiliate',
     },
     {
-      title: 'Millennium High School',
-      description: 'Partner',
+      title: 'Columbia Community Foundation',
+      description: 'Civic Partner',
     },
     {
-      title: 'Tutor The Community',
-      description: 'Partner',
+      title: 'Local Business Alliance',
+      description: 'Economic Partner',
     },
     {
-      title: 'Bezos Foundation',
-      description: 'Partner',
+      title: 'Columbia Neighborhood Councils',
+      description: 'Community Partner',
     },
   ],
 };
@@ -63,10 +63,10 @@ export const impactAbout: ContentProps = {
   header: {
     title: 'The Impact We Seek',
   },
-  content: 'We plan to develop extensive partnerships with organizations, public schools, libraries, and the New York City Department of Education to bring this opportunity to every single kid in New York. I will also host workshops across these platforms to gather data and expand our curriculum, which will be readily accessible to anyone in the world who is curious, wants to educate others, and learn about the goals (AI)trophy intends to facilitate within our communities',
+  content: 'We plan to field candidates at every level of local government — city council, school board, and beyond — who reflect Columbia\'s diversity and put residents first. We will host regular town halls to keep elected officials accountable, partner with local organizations to address pressing community needs, and build the civic infrastructure that lets every Columbian participate in shaping their future.',
   image: {
     src: kids3,
-    alt: 'Impact',
+    alt: 'Columbia Forward impact in the community',
   },
   isReversed: false,
   isAfterContent: false,
@@ -77,10 +77,7 @@ export const visionAbout: ContentProps = {
   header: {
     title: 'Our Vision for the Future',
   },
-  content: 'AI is consistently being alienated in educational settings, but, we can change the perspective on AI into someone good if we teach our younger generation what it is. The opportunity provided by Artificial Intelligence can be provided to underprivileged kids is a complete revelation. We dream to provide the opportunity of knowledge on how to properly utilize this technology to every underprivileged child around the world.',
+  content: 'We envision a Columbia where elected officials work across the aisle because their constituents demand it — where policy is driven by evidence and community input, not ideology or donor interests. A Columbia Forward future means ranked-choice voting that gives every voter a real voice, open primaries that end the stranglehold of party extremes, and local leaders bold enough to tackle the real challenges facing our community with honesty and creativity.',
   isReversed: true,
   isAfterContent: false,
 };
-
-
-

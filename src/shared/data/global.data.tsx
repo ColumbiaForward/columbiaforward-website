@@ -11,12 +11,12 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 export const announcementData: AnnouncementProps = {
   title: 'NEW',
   callToAction: {
-    text: 'This template is made with Next.js 14 using the new App Router »',
-    href: 'https://nextjs.org/blog/next-14',
+    text: 'Columbia Forward — Join the movement for common-sense leadership »',
+    href: '/',
   },
   callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Follow @ForwardPartyUSA on Twitter',
+    href: 'https://twitter.com/ForwardPartyUSA',
   },
 };
 
@@ -38,9 +38,9 @@ export const headerData: HeaderProps = {
   ],
   actions: [
     {
-      text: 'Get Started',
-      href: 'https://aitrophy.vercel.app/',
-      targetBlank: true,
+      text: 'Get Involved',
+      href: '/#contact',
+      targetBlank: false,
     },
   ],
   isSticky: true,
@@ -51,130 +51,74 @@ export const headerData: HeaderProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'Columbia Forward',
   links: [],
   columns: [
     {
-      title: 'Product',
+      title: 'Party',
       links: [
         {
-          label: 'Features',
-          href: '/',
+          label: 'About Us',
+          href: '/about',
         },
         {
-          label: 'Security',
+          label: 'Our Platform',
           href: '/',
         },
         {
           label: 'Team',
-          href: '/',
-        },
-        {
-          label: 'Enterprise',
-          href: '/',
-        },
-        {
-          label: 'Customer stories',
-          href: '/',
-        },
-        {
-          label: 'Resources',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        {
-          label: 'Developer API',
-          href: '/',
-        },
-        {
-          label: 'Partners',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        {
-          label: 'Docs',
-          href: '/',
-        },
-        {
-          label: 'Community Forum',
-          href: '/',
-        },
-        {
-          label: 'Professional Services',
-          href: '/',
-        },
-        {
-          label: 'Skills',
-          href: '/',
-        },
-        {
-          label: 'Status',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        {
-          label: 'About',
-          href: '/',
+          href: '/team',
         },
         {
           label: 'Blog',
           href: '/blog',
         },
+      ],
+    },
+    {
+      title: 'Get Involved',
+      links: [
         {
-          label: 'Careers',
-          href: '/',
+          label: 'Volunteer',
+          href: '/#contact',
         },
         {
-          label: 'Press',
-          href: '/',
+          label: 'Donate',
+          href: '/#contact',
         },
         {
-          label: 'Inclusion',
-          href: '/',
+          label: 'Events',
+          href: '/#contact',
+        },
+      ],
+    },
+    {
+      title: 'Connect',
+      links: [
+        {
+          label: 'Contact Us',
+          href: '/#contact',
         },
         {
-          label: 'Social Impact',
-          href: '/',
+          label: 'Mailing List',
+          href: '/#contact',
         },
         {
-          label: 'Shop',
-          href: '/',
+          label: 'Forward Party',
+          href: 'https://www.forwardparty.com',
         },
       ],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/ForwardPartyUSA' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/AI-trophy' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
-      <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
-        Made by{' '}
-        <a
-          className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-          href="https://onwidget.com/"
-        >
-          {' '}
-          (AI)trophy
-        </a>{' '}
-        · All rights reserved.
+        © 2025 Columbia Forward · All rights reserved.
       </span>
     </div>
   ),
@@ -186,28 +130,27 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['New York, NY USA'],
+      texts: ['Columbia, USA'],
     },
     {
       title: 'Email',
-      texts: ['Office: info@example.com'],
+      texts: ['info@columbiaforward.org'],
     },
   ],
   socials: [
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/ForwardPartyUSA' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/AI-trophy' },
+    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
-      <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
-        Made by{' '}
+        © 2025{' '}
         <a
-          className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-          href="https://aitrophy.vercel.app/"
+          className="font-semibold text-slate-900 dark:text-gray-200 hover:text-primary-600 hover:underline dark:hover:text-primary-400"
+          href="https://www.forwardparty.com"
         >
-          {' '}
-          (AI)trophy
+          Columbia Forward
         </a>{' '}
         · All rights reserved.
       </span>

@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: '(AI)Trophy',
+  name: 'Columbia Forward',
 
-  origin: 'https://aitrophy.vercel.app',
+  origin: 'https://columbiaforward.org',
   basePathname: '/',
   trailingSlash: false,
 
-  title: '(AI)Trophy',
-  description: '(AI)Trophy is an open source curriculum and workshop for K-12 students.',
+  title: 'Columbia Forward',
+  description: 'Columbia Forward is a local chapter of the Forward Party — bringing together Columbia residents to find common-sense solutions and break partisan gridlock.',
 };

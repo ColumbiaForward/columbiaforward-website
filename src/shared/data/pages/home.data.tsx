@@ -1,75 +1,56 @@
 import {
   IconArrowDown,
-  IconArrowsRightLeft,
-  IconBrandLinkedin,
-  IconBrandTailwind,
-  IconBrandTwitter,
   IconBulb,
-  IconCheck,
-  IconClock,
-  IconComponents,
-  IconDownload,
-  IconListCheck,
   IconMail,
-  IconMapPin,
-  IconPhoneCall,
-  IconRocket,
+  IconUsers,
+  IconStar,
+  IconCheck,
+  IconFlag,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
-  ContactProps,
-  ContentProps,
   FAQsProps,
-  FeaturesProps,
   HeroProps,
-  PricingProps,
   SocialProofProps,
   StepsProps,
-  TeamProps,
-  TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.png';
-import aspencrgLogo from '~/assets/images/aspen-crg-logo.png';
-import bffLogo from '~/assets/images/bff-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
+import heroImg from '~/assets/images/hero-bg.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
   title: (
     <>
-      (AI)trophy - Empowering the kids with AI
+      Moving Columbia Forward — Together
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          K-12
+        <span className="font-semibold underline decoration-primary-400 decoration-wavy decoration-1 underline-offset-2">
+          Columbia
         </span>{' '}
-        are often neglected in the digital age.
+        deserves leaders who put people over party.
       </span>{' '}
-      We are doing something about it and it's all{' '}
-      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-        open source.
+      We are building a community-driven movement for{' '}
+      <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-primary-500">
+        common-sense solutions.
       </span>
     </>
   ),
   callToAction: {
-    text: 'See Curriculum',
-    href: 'https://github.com/AI-trophy/',
-    icon: IconBulb,
-    targetBlank: true,
+    text: 'Our Platform',
+    href: '/#steps-on-home',
+    icon: IconFlag,
+    targetBlank: false,
   },
   callToAction2: {
-    text: 'Join Mailing List',
-    icon: IconMail,
-    href: '/',
+    text: 'Get Involved',
+    icon: IconUsers,
+    href: '/#contact',
   },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Columbia Forward — Community & Civic Engagement',
   },
 };
 
@@ -79,18 +60,7 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   imageSize: 'w-32 md:w-48 lg:w-56',
   containerClass: 'py-6 md:py-8 lg:py-10',
-  images: [
-    {
-      link: 'https://www.risinggenerations.org/',
-      src: aspencrgLogo,
-      alt: 'Aspen CRG Logo',
-    },
-    {
-      link: 'https://www.bezosfamilyfoundation.org/story/introducing-the-center-for-rising-generations',
-      src: bffLogo,
-      alt: 'Bezo Foundation Logo',
-    },
-  ],
+  images: [],
 };
 
 // Steps data on Home page *******************
@@ -100,80 +70,39 @@ export const stepsHome: StepsProps = {
   isReversed: false,
   isImageDisplayed: true,
   image: {
-    src: gasImg,
-    alt: 'Steps image',
+    src: heroImg,
+    alt: 'Columbia community coming together',
   },
   header: {
-    title: 'Workshop Workflow',
+    title: 'How We Move Forward',
   },
   items: [
     {
-      title: 'The Dream',
+      title: 'Find Common Ground',
       description:
-        'Artificial intelligence provides the dream of democratized knowledge, no matter where you are or what connections you hold. We provide a vision of why you should care and the potential to answer any question with an expert-level first approximation.',
+        'We reject the idea that every issue must be a partisan battle. Columbia Forward brings together residents of all backgrounds to identify shared values and the solutions most people actually agree on.',
       icon: IconArrowDown,
     },
     {
-      title: 'Introduction to Large Language Models',
+      title: 'Propose Bold Solutions',
       description:
-        'While AI is broad, we focus on Large Language Models (LLMs) like ChatGPT. These are neural networks that use math and vast data to predict the next word. You will learn how they function, emphasizing that they are not sentient but predictive engines.',
+        'We are not bound by ideology. We look at what works — drawing on evidence, local expertise, and community input — to champion practical policies that move Columbia forward.',
       icon: IconArrowDown,
     },
     {
-      title: 'AI Safety and Atrophy',
+      title: 'Citizen-Led Action',
       description:
-        'We discuss how to use AI responsibly and the promises it holds if used accordingly. The objective is to learn how to use LLMs well and understand how irresponsible usage can lead to cognitive decline.',
+        'Our movement is powered by residents, not party machines. We empower volunteers, host town halls, and amplify the voices of everyday Columbians who want real change.',
       icon: IconArrowDown,
     },
     {
-      title: 'Interactive Workshop',
+      title: 'Deliver Real Results',
+      description:
+        'We hold ourselves accountable to outcomes. Elected Columbia Forward leaders will be measured by results — safer streets, better schools, a thriving local economy — not party loyalty.',
+      icon: IconCheck,
     },
   ],
 };
-
-// Testimonials data on Home page *******************
-export const testimonialsHome: TestimonialsProps = {
-  id: 'testimonials-on-home',
-  hasBackground: true,
-  header: {
-    title: 'What our customers say about us',
-    subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
-  },
-  testimonials: [
-    {
-      name: 'Ms. Tayla Kirsten',
-      job: 'K-5 Principal',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Tayla Kirsten',
-      },
-      href: '/',
-    },
-    {
-      name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Silver Jordan',
-      },
-      href: '/',
-    },
-    {
-      name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Kelsey Arden',
-      },
-      href: '/',
-    },
-  ],
-};
-
 
 // FAQS data on Home page *******************
 export const faqs2Home: FAQsProps = {
@@ -181,53 +110,54 @@ export const faqs2Home: FAQsProps = {
   hasBackground: false,
   header: {
     title: 'Frequently Asked Questions',
-    // Note: You may want to update this subtitle text as well, as it is still Latin.
     subtitle:
-      'Common questions regarding our educational goals, curriculum expansion, and partnerships.',
+      'Common questions about Columbia Forward and the Forward Party movement.',
     tagline: 'FAQS',
   },
   items: [
     {
-      title: 'Why is it important to educate students about AI rather than strictly prohibiting it?',
-      description: `While AI has the power to democratize knowledge and open career pathways, without proper education, students may mistakenly view it as sentient or infallible. The organization believes that simply avoiding AI leads to overreliance and a lack of critical thinking. By teaching students what AI actually is, they can learn to use it as a powerful tool for the workforce while maintaining their problem-solving skills and academic integrity.`,
+      title: 'What is the Forward Party?',
+      description: `The Forward Party is a national political movement founded on the belief that America's broken two-party system is failing everyday citizens. Rather than leaning left or right, Forward focuses on pragmatic, evidence-based solutions — prioritizing people over party. Columbia Forward is our local chapter bringing that energy to our community.`,
     },
     {
-      title: 'How does the organization plan to reach students and expand its curriculum?',
-      description: `The initiative plans to develop extensive partnerships with public schools, libraries, and the New York City Department of Education to reach every child in NYC. Additionally, they will host workshops to gather data to refine their curriculum. This curriculum is intended to be readily accessible to anyone in the world who is curious or wants to educate others.`,
+      title: 'What does Columbia Forward stand for?',
+      description: `Columbia Forward champions electoral reform (ranked-choice voting, open primaries), government accountability, fiscal responsibility, and community-centered policy. We believe in finding the best ideas regardless of which "side" they come from, and working together to make Columbia a better place to live, work, and raise a family.`,
     },
     {
-      title: 'Which organizations represent your current key partners?',
-      description: `The initiative has established partnerships with several notable entities, including: Aspen Institution, Millennium High School, Tutor The Community, and Bezos Foundation.`,
+      title: 'How is Columbia Forward different from the major parties?',
+      description: `Unlike the Republican and Democratic parties, we are not beholden to national donors, ideological litmus tests, or partisan leaders. Our candidates answer to Columbia residents first and foremost. We welcome members from all political backgrounds who are tired of the status quo and ready to focus on results over rhetoric.`,
+    },
+    {
+      title: 'How can I get involved?',
+      description: `Getting involved is easy! You can volunteer for events and canvassing, join our mailing list to stay updated, attend a town hall or community meeting, donate to support our local campaigns, or simply spread the word. Every action — big or small — helps move Columbia forward.`,
     },
   ],
 };
 
-
-
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Join Columbia Forward Today',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'Be part of a growing movement of Columbians who believe in putting community first. Together we can break partisan gridlock and build the future Columbia deserves.',
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Get Involved',
+    href: '/#contact',
+    icon: IconUsers,
   },
   items: [
     {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
+      title: 'Volunteer',
+      description: 'Give your time to help build a better Columbia.',
+      href: '/#contact',
     },
     {
       title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
+      description: 'Read about our platform and vision for Colombia.',
+      href: '/about',
     },
     {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+      title: 'Stay Updated',
+      description: 'Join our mailing list for news and events.',
       form: {
         icon: IconMail,
         input: {

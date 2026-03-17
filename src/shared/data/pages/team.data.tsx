@@ -1,24 +1,25 @@
 import { IconBrandTwitter, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
-import { HeroProps, TeamProps } from '~/shared/types';
+import { TeamProps } from '~/shared/types';
+import ryanImg from '~/assets/images/ryan.jpg';
+import celineImg from '~/assets/images/celine.jpg';
 
 
-// Team data on Home page *******************
+// Team data on Team page *******************
 export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
     title: 'Team Members',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
-    // tagline: 'Team',
+      'Meet the dedicated Columbians driving Columbia Forward — community members who believe in putting people over party and building the future our city deserves.',
   },
   teams: [
     {
-      name: 'Russell Zhang',
-      occupation: 'Founder',
+      name: 'Ryan Zhang',
+      occupation: 'Co-Founder',
       image: {
-        src: 'https://raw.githubusercontent.com/AI-trophy/aitrophy-website/main/src/assets/images/russell.jpg',
-        alt: 'Russell Zhang',
+        src: ryanImg,
+        alt: 'Ryan Zhang',
       },
       items: [
         {
@@ -27,7 +28,7 @@ export const teamHome: TeamProps = {
           href: '#',
         },
         {
-          title: 'Know more on Linkedin',
+          title: 'Know more on LinkedIn',
           icon: IconBrandLinkedin,
           href: '#',
         },
@@ -39,11 +40,11 @@ export const teamHome: TeamProps = {
       ],
     },
     {
-      name: 'Ryan Zhang',
-      occupation: 'Advisor',
+      name: 'Celine',
+      occupation: 'Co-Founder',
       image: {
-        src: 'https://raw.githubusercontent.com/Rhyzhang/rhyzhang.github.io/main/assets/img/me.jpg',
-        alt: 'Ryan Zhang',
+        src: celineImg,
+        alt: 'Celine',
       },
       items: [
         {
@@ -52,7 +53,7 @@ export const teamHome: TeamProps = {
           href: '#',
         },
         {
-          title: 'Know more on Linkedin',
+          title: 'Know more on LinkedIn',
           icon: IconBrandLinkedin,
           href: '#',
         },
