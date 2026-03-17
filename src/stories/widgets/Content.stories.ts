@@ -3,7 +3,7 @@ import { IconCheck, IconRocket, IconBulb, IconClock } from '@tabler/icons-react'
 
 import Component from '~/components/widgets/Content';
 import { ContentProps } from '~/shared/types';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
+import kids1Img from '~/assets/images/kids1.jpg';
 
 // Mock data for Content stories
 const mockData: ContentProps = {
@@ -36,7 +36,7 @@ const mockData: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: kids1Img,
     alt: 'Content showcase image',
   },
 };

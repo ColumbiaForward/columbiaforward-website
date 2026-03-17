@@ -32,8 +32,8 @@ export const headerData: HeaderProps = {
       href: '/team',
     },
     {
-      label: 'About',
-      href: '/about',
+      label: 'News',
+      href: '/news',
     },
   ],
   actions: [
@@ -58,8 +58,8 @@ export const footerData: FooterProps = {
       title: 'Party',
       links: [
         {
-          label: 'About Us',
-          href: '/about',
+          label: 'News',
+          href: '/news',
         },
         {
           label: 'Our Platform',

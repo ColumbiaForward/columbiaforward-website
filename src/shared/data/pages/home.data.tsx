@@ -1,9 +1,7 @@
 import {
   IconArrowDown,
-  IconBulb,
   IconMail,
   IconUsers,
-  IconStar,
   IconCheck,
   IconFlag,
 } from '@tabler/icons-react';
@@ -12,7 +10,6 @@ import {
   FAQsProps,
   HeroProps,
   SocialProofProps,
-  StepsProps,
 } from '../../types';
 import heroImg from '~/assets/images/hero-bg.jpg';
 
@@ -63,46 +60,6 @@ export const socialProofHome: SocialProofProps = {
   images: [],
 };
 
-// Steps data on Home page *******************
-export const stepsHome: StepsProps = {
-  id: 'steps-on-home',
-  hasBackground: false,
-  isReversed: false,
-  isImageDisplayed: true,
-  image: {
-    src: heroImg,
-    alt: 'Columbia community coming together',
-  },
-  header: {
-    title: 'How We Move Forward',
-  },
-  items: [
-    {
-      title: 'Find Common Ground',
-      description:
-        'We reject the idea that every issue must be a partisan battle. Columbia Forward brings together residents of all backgrounds to identify shared values and the solutions most people actually agree on.',
-      icon: IconArrowDown,
-    },
-    {
-      title: 'Propose Bold Solutions',
-      description:
-        'We are not bound by ideology. We look at what works — drawing on evidence, local expertise, and community input — to champion practical policies that move Columbia forward.',
-      icon: IconArrowDown,
-    },
-    {
-      title: 'Citizen-Led Action',
-      description:
-        'Our movement is powered by residents, not party machines. We empower volunteers, host town halls, and amplify the voices of everyday Columbians who want real change.',
-      icon: IconArrowDown,
-    },
-    {
-      title: 'Deliver Real Results',
-      description:
-        'We hold ourselves accountable to outcomes. Elected Columbia Forward leaders will be measured by results — safer streets, better schools, a thriving local economy — not party loyalty.',
-      icon: IconCheck,
-    },
-  ],
-};
 
 // FAQS data on Home page *******************
 export const faqs2Home: FAQsProps = {
@@ -153,7 +110,7 @@ export const callToAction2Home: CallToActionProps = {
     {
       title: 'Learn more',
       description: 'Read about our platform and vision for Colombia.',
-      href: '/about',
+      href: '/news',
     },
     {
       title: 'Stay Updated',
