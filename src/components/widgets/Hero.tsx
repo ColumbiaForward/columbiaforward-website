@@ -31,8 +31,10 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             placeholder="blur"
             priority
           />
-          {/* 2. Dark Overlay Layer - light overlay to let the image show */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-slate-900/80" />
+          {/* 2. Dark Overlay Layer - fades from light at top to full slate-900 at bottom */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-slate-900" />
+          {/* 3. Extra bottom-fade for a seamless blend into the next section */}
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-slate-900 to-transparent" />
         </div>
       )}
 
