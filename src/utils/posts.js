@@ -22,7 +22,7 @@ const load = () => {
 let _posts;
 
 /** */
-export const fetchPosts = async () => {
+const fetchPosts = async () => {
   _posts = _posts || load();
 
   return await _posts;
@@ -53,16 +53,3 @@ export const findPostBySlug = async (slug) => {
   return null;
 };
 
-/** */
-export const findPostsByIds = async (ids) => {
-  if (!Array.isArray(ids)) return [];
-
-  const posts = await fetchPosts();
-
-  return ids.reduce(function (r, id) {
-    posts.some(function (post) {
-      return id === post.id && r.push(post);
-    });
-    return r;
-  }, []);
-};

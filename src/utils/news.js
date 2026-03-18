@@ -22,7 +22,7 @@ const load = () => {
 let _news;
 
 /** */
-export const fetchNews = async () => {
+const fetchNews = async () => {
   _news = _news || load();
 
   return await _news;
@@ -37,7 +37,7 @@ export const findLatestNews = async ({ count } = {}) => {
 };
 
 /** */
-export const findNewsBySlug = async (slug) => {
+const findNewsBySlug = async (slug) => {
   if (!slug) return null;
 
   try {
@@ -53,16 +53,3 @@ export const findNewsBySlug = async (slug) => {
   return null;
 };
 
-/** */
-export const findNewsByIds = async (ids) => {
-  if (!Array.isArray(ids)) return [];
-
-  const news = await fetchNews();
-
-  return ids.reduce(function (r, id) {
-    news.some(function (item) {
-      return id === item.id && r.push(item);
-    });
-    return r;
-  }, []);
-};

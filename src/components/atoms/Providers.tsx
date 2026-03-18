@@ -1,6 +1,6 @@
 'use client';
 
-export interface ProvidersProps {
+interface ProvidersProps {
   children: React.ReactNode
 }
 

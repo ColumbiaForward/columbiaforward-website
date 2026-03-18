@@ -17,14 +17,14 @@ import heroImg from '~/assets/images/hero-bg.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Moving Columbia Forward — Together
+      Moving Forward Together at Columbia
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-400 decoration-wavy decoration-1 underline-offset-2">
-          Columbia
+          The USA
         </span>{' '}
         deserves leaders who put people over party.
       </span>{' '}
@@ -43,7 +43,7 @@ export const heroHome: HeroProps = {
   callToAction2: {
     text: 'Get Involved',
     icon: IconUsers,
-    href: '/#contact',
+    href: 'https://forms.gle/Es3AbsS6a1YEvTTt5',
   },
   image: {
     src: heroImg,
@@ -78,38 +78,38 @@ export const faqs2Home: FAQsProps = {
     },
     {
       title: 'What does Columbia Forward stand for?',
-      description: `Columbia Forward champions electoral reform (ranked-choice voting, open primaries), government accountability, fiscal responsibility, and community-centered policy. We believe in finding the best ideas regardless of which "side" they come from, and working together to make Columbia a better place to live, work, and raise a family.`,
+      description: `Columbia Forward champions electoral reform (ranked-choice voting, open primaries), government accountability, fiscal responsibility, and community-centered policy. We believe in finding the best ideas regardless of which "side" they come from, and working together to make our country a better place to live, work, and raise a family.`,
     },
     {
       title: 'How is Columbia Forward different from the major parties?',
-      description: `Unlike the Republican and Democratic parties, we are not beholden to national donors, ideological litmus tests, or partisan leaders. Our candidates answer to Columbia residents first and foremost. We welcome members from all political backgrounds who are tired of the status quo and ready to focus on results over rhetoric.`,
+      description: `Unlike the Republican and Democratic parties, we are not beholden to national donors, ideological litmus tests, or partisan leaders. We welcome members from all political backgrounds who are tired of the status quo and ready to focus on results over rhetoric.`,
     },
     {
       title: 'How can I get involved?',
-      description: `Getting involved is easy! You can volunteer for events and canvassing, join our mailing list to stay updated, attend a town hall or community meeting, donate to support our local campaigns, or simply spread the word. Every action — big or small — helps move Columbia forward.`,
+      description: `Getting involved is easy! We are ultra grass roots. Just email cgc2153@columbia.edu, rz2716@columbia.edu, or columbiauniversityforward@gmail.com.`,
     },
   ],
 };
 
 // CallToAction data *******************
-export const callToAction2Home: CallToActionProps = {
+const callToAction2Home: CallToActionProps = {
   title: 'Join Columbia Forward Today',
   subtitle:
-    'Be part of a growing movement of Columbians who believe in putting community first. Together we can break partisan gridlock and build the future Columbia deserves.',
+    'Be part of a growing movement of Columbians who believe in putting community first. Together we can break partisan gridlock and build the future our country deserves.',
   callToAction: {
     text: 'Get Involved',
-    href: '/#contact',
+    href: 'https://forms.gle/Es3AbsS6a1YEvTTt5',
     icon: IconUsers,
   },
   items: [
     {
       title: 'Volunteer',
       description: 'Give your time to help build a better Columbia.',
-      href: '/#contact',
+      href: 'https://forms.gle/Es3AbsS6a1YEvTTt5',
     },
     {
       title: 'Learn more',
-      description: 'Read about our platform and vision for Colombia.',
+      description: 'Read about what we have been up to!',
       href: '/news',
     },
     {

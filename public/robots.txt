@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aitrophy.vercel.app/
+Host: https://columbiaforward.vercel.app/
 
 # Sitemaps
-Sitemap: https://aitrophy.vercel.app/sitemap.xml
+Sitemap: https://columbiaforward.vercel.app/sitemap.xml

@@ -1,4 +1,4 @@
-import { IconBrandTwitter, IconBrandLinkedin, IconMail } from '@tabler/icons-react';
+import { IconMail } from '@tabler/icons-react';
 import { TeamProps } from '~/shared/types';
 import ryanImg from '~/assets/images/ryan.jpg';
 import celineImg from '~/assets/images/celine.jpg';
@@ -23,44 +23,24 @@ export const teamHome: TeamProps = {
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on LinkedIn',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:rz2716@columbia.edu',
         },
       ],
     },
     {
-      name: 'Celine',
+      name: 'Celine Cotran',
       occupation: 'Co-Founder',
       image: {
         src: celineImg,
-        alt: 'Celine',
+        alt: 'Celine Cotran',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on LinkedIn',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:cgc2153@columbia.edu',
         },
       ],
     },

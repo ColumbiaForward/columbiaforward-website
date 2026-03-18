@@ -1,9 +1,6 @@
 import {
-  IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
-  IconBrandTwitter,
-  IconRss,
 } from '@tabler/icons-react';
 import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 
@@ -39,8 +36,8 @@ export const headerData: HeaderProps = {
   actions: [
     {
       text: 'Get Involved',
-      href: '/#contact',
-      targetBlank: false,
+      href: 'https://forms.gle/Es3AbsS6a1YEvTTt5',
+      targetBlank: true,
     },
   ],
   isSticky: true,
@@ -50,7 +47,7 @@ export const headerData: HeaderProps = {
 };
 
 // Footer data
-export const footerData: FooterProps = {
+const footerData: FooterProps = {
   title: 'Columbia Forward',
   links: [],
   columns: [
@@ -111,9 +108,8 @@ export const footerData: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/ForwardPartyUSA' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/columbia.forward/' },
+    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/ColumbiaForwardParty' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
@@ -130,17 +126,16 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['Columbia, USA'],
+      texts: ['New York, NY'],
     },
     {
       title: 'Email',
-      texts: ['info@columbiaforward.org'],
+      texts: ['columbiauniversityforward@gmail.com'],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://twitter.com/ForwardPartyUSA' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/columbia.forward/' },
+    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/ColumbiaForwardParty' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
@@ -148,7 +143,7 @@ export const footerData2: FooterProps = {
         © 2025{' '}
         <a
           className="font-semibold text-slate-900 dark:text-gray-200 hover:text-primary-600 hover:underline dark:hover:text-primary-400"
-          href="https://www.forwardparty.com"
+          href="https://columbiaforward.vercel.app/"
         >
           Columbia Forward
         </a>{' '}

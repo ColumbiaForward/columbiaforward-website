@@ -1,7 +1,7 @@
 module.exports.SITE = {
   name: 'Columbia Forward',
 
-  origin: 'https://columbiaforward.org',
+  origin: 'https://columbiaforward.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
