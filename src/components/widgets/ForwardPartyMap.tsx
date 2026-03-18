@@ -1,8 +1,22 @@
 'use client';
 
+import { useEffect } from 'react';
 import Script from 'next/script';
 
 export default function ForwardPartyMap() {
+    useEffect(() => {
+        // When the component remounts (e.g. returning to the page), 
+        // Next.js won't re-run the external scripts because they are already loaded.
+        // We have to manually tell the map to redraw itself into the new DOM elements.
+        if (typeof window !== 'undefined' && (window as any).simplemaps_usmap) {
+            try {
+                (window as any).simplemaps_usmap.load();
+            } catch (e) {
+                console.error("Error loading map:", e);
+            }
+        }
+    }, []);
+
     return (
         <section className="py-10 md:py-14 lg:py-16">
             <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -22,6 +36,11 @@ export default function ForwardPartyMap() {
                     <Script
                         src="https://forwardparty.nationbuilder.com/themes/1/61f5b444c294805d66c8b641/0/attachments/16434926601714162843/default/usmap.js"
                         strategy="afterInteractive"
+                        onLoad={() => {
+                            if (typeof window !== 'undefined' && (window as any).simplemaps_usmap) {
+                                (window as any).simplemaps_usmap.load();
+                            }
+                        }}
                     />
                     <div
                         id="map"
