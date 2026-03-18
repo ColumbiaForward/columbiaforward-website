@@ -10,8 +10,6 @@ export const teamHome: TeamProps = {
   hasBackground: false,
   header: {
     title: 'Team Members',
-    subtitle:
-      'Meet the dedicated Columbians driving Columbia Forward — community members who believe in putting people over party and building the future our city deserves.',
   },
   teams: [
     {
