@@ -30,4 +30,6 @@ Throughout her tenure in office, Alex has prioritized inclusive, intersectional 
 
 She lives with her two cats in downtown New Paltz, and spends her spare time writing poetry, hiking, camping, and attending music events all over the region. 
 
- 
+
+### TBA
+Laura Donovan and Hadassah Mativesky 
