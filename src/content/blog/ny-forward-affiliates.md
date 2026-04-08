@@ -9,6 +9,25 @@ tags: [markdown, blog]
 
 ## Rising Politicians We Are Excited About
 
+### Laura Donovan
+
+![Laura Donovan, Ulster County Legislator](/images/laura-donovan.jpg)
+
+Laura Donovan is a financial planner, community advocate, and proud lifelong Hudson Valley
+resident serving her first term as Ulster County Legislator to bring transparent, accountable
+leadership to Marlborough.
+Through her work as a fiduciary financial advisor, Laura has helped hundreds of families across
+over 20 states create personalized financial roadmaps that reflect their values, goals, and
+challenges. Her work centers on ensuring financial tools and planning aren’t just for the wealthy,
+but are accessible to working people, small business owners, and anyone ready to take control
+of their future.
+She’s a co-founder of the Diaper Bank of Orange, Ulster, and Sullivan, which provides essential
+baby supplies to Hudson Valley families - another example of her hands-on approach to
+addressing community needs.
+Laura is bringing this same commitment to trust, empowerment, and practical solutions to her
+work in the Ulster County Legislature, where she works to ensure that the community thrives
+through accountable leadership and effective, people-centered policies.
+
 ### Trevor Redl
 
 ![Trevor Redl, Dutchess County Legislator](/images/trevor-redl.jpg)
@@ -32,4 +51,4 @@ She lives with her two cats in downtown New Paltz, and spends her spare time wri
 
 
 ### TBA
-Laura Donovan and Hadassah Mativesky 
+Hadassah Mativesky 
