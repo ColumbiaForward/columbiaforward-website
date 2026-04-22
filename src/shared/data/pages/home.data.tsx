@@ -23,7 +23,7 @@ export const heroHome: HeroProps = {
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-400 decoration-wavy decoration-1 underline-offset-2">
+        <span className="font-semibold">
           The USA
         </span>{' '}
         deserves leaders who put people over party.
