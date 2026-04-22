@@ -144,6 +144,8 @@ type Timeline = {
 
 type Team = {
   name: string;
+  nameHref?: string;
+  nameTargetBlank?: boolean;
   occupation: string;
   image: Image;
   items?: Array<Item>;

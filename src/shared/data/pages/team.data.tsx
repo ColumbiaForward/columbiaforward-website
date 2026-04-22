@@ -14,6 +14,8 @@ export const teamHome: TeamProps = {
   teams: [
     {
       name: 'Ryan Zhang',
+      nameHref: 'https://rhyzhang.github.io/',
+      nameTargetBlank: true,
       occupation: 'Co-Founder',
       image: {
         src: ryanImg,
@@ -29,6 +31,8 @@ export const teamHome: TeamProps = {
     },
     {
       name: 'Celine Cotran',
+      nameHref: 'https://celinecotran.vercel.app/about',
+      nameTargetBlank: true,
       occupation: 'Co-Founder',
       image: {
         src: celineImg,
