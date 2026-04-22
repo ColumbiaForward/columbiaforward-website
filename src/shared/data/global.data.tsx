@@ -114,7 +114,7 @@ const footerData: FooterProps = {
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
       <span>
-        © 2025 Columbia Forward · All rights reserved.
+        © 2026 Columbia Forward · All rights reserved.
       </span>
     </div>
   ),
@@ -140,7 +140,7 @@ export const footerData2: FooterProps = {
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
       <span>
-        © 2025{' '}
+        © 2026{' '}
         <a
           className="font-semibold text-slate-900 dark:text-gray-200 hover:text-primary-600 hover:underline dark:hover:text-primary-400"
           href="https://columbiaforward.vercel.app/"
