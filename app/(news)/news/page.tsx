@@ -13,7 +13,7 @@ export default async function NewsList({}) {
   return (
     <section className="mx-auto max-w-3xl px-6 pt-20 pb-12 sm:px-6 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20">
       <header>
-        <h1 className="leading-tighter font-heading mb-8 text-center text-4xl font-bold tracking-tighter md:mb-16 md:text-5xl">
+        <h1 className="leading-tighter font-heading mb-8 text-center text-2xl font-bold tracking-tighter sm:text-3xl md:mb-16">
           News
         </h1>
       </header>
