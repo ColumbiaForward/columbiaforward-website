@@ -18,23 +18,27 @@ const ItemTeam = ({
 }: Team) => {
   return (
     <div className={twMerge('', containerClass)}>
-      <Image src={image.src} width={240} height={320} alt={image.alt} className={twMerge('', imageClass)} />
+      {nameHref ? (
+        <a
+          href={nameHref}
+          target={nameTargetBlank ? '_blank' : undefined}
+          rel={nameTargetBlank ? 'noopener noreferrer' : undefined}
+          className="group block overflow-hidden rounded-md"
+          aria-label={`Visit ${name}'s website`}
+        >
+          <Image
+            src={image.src}
+            width={240}
+            height={320}
+            alt={image.alt}
+            className={twMerge('', imageClass, 'transition-transform duration-200 ease-out group-hover:scale-105 group-focus-visible:scale-105')}
+          />
+        </a>
+      ) : (
+        <Image src={image.src} width={240} height={320} alt={image.alt} className={twMerge('', imageClass)} />
+      )}
       <div className={twMerge('', panelClass)}>
-        <h3 className={twMerge('', nameClass)}>
-          {nameHref ? (
-            <a
-              href={nameHref}
-              target={nameTargetBlank ? '_blank' : undefined}
-              rel={nameTargetBlank ? 'noopener noreferrer' : undefined}
-              className="inline-block rounded-sm decoration-2 underline-offset-4 transition-all duration-200 hover:scale-105 hover:text-primary-700 hover:underline focus-visible:scale-105 focus-visible:text-primary-700 focus-visible:underline focus-visible:outline-none"
-              aria-label={`Visit ${name}'s website`}
-            >
-              {name}
-            </a>
-          ) : (
-            name
-          )}
-        </h3>
+        <h3 className={twMerge('', nameClass)}>{name}</h3>
         <p className={twMerge('', occupationClass)}>{occupation}</p>
         <ul className={twMerge('', itemsClass)}>
           {items &&
