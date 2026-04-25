@@ -1,14 +1,9 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Script from 'next/script';
 
 export default function ForwardPartyMap() {
-    const sectionRef = useRef<HTMLElement | null>(null);
-    const hasAutoCenteredRef = useRef(false);
-    const lastScrollYRef = useRef(0);
-    const isScrollingDownRef = useRef(false);
-
     useEffect(() => {
         // When the component remounts (e.g. returning to the page), 
         // Next.js won't re-run the external scripts because they are already loaded.
@@ -22,50 +17,8 @@ export default function ForwardPartyMap() {
         }
     }, []);
 
-    useEffect(() => {
-        if (typeof window === 'undefined' || !sectionRef.current) return;
-
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (prefersReducedMotion) return;
-
-        const updateScrollDirection = () => {
-            const currentY = window.scrollY;
-            isScrollingDownRef.current = currentY > lastScrollYRef.current;
-            lastScrollYRef.current = currentY;
-        };
-
-        lastScrollYRef.current = window.scrollY;
-        window.addEventListener('scroll', updateScrollDirection, { passive: true });
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (!entry || hasAutoCenteredRef.current || !isScrollingDownRef.current) return;
-
-                // Trigger when the user reaches the upper half of the map section.
-                if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
-                    hasAutoCenteredRef.current = true;
-                    sectionRef.current?.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center',
-                    });
-                }
-            },
-            {
-                threshold: [0.35, 0.5],
-                rootMargin: '-10% 0px -15% 0px',
-            }
-        );
-
-        observer.observe(sectionRef.current);
-
-        return () => {
-            observer.disconnect();
-            window.removeEventListener('scroll', updateScrollDirection);
-        };
-    }, []);
-
     return (
-        <section id="forward-map" ref={sectionRef} className="py-10 md:py-14 lg:py-16">
+        <section className="py-10 md:py-14 lg:py-16">
             <div className="mx-auto max-w-5xl px-4 sm:px-6">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
