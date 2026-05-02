@@ -15,7 +15,7 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
           onClick={() => handleSetIndex(index)}
           className="mx-auto max-w-3xl select-none bg-transparent text-base text-gray-700"
         >
-          <div className={classCollapseItem}>
+          <div className={`${classCollapseItem} transition-colors duration-200 hover:bg-white hover:bg-opacity-15 cursor-pointer`}>
             <div
               className="align-center flex justify-between"
               id={`accordion__heading-${index}`}
