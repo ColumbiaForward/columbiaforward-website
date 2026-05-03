@@ -11,21 +11,21 @@ export const metadata: Metadata = {
 export default async function NewsList({}) {
   const news = await findLatestNews();
   return (
-    <section className="mx-auto max-w-3xl px-6 pt-20 pb-12 sm:px-6 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20">
+    <section className="mx-auto max-w-2xl px-6 pt-20 pb-12 sm:px-6 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20">
       <header>
-        <h1 className="leading-tighter font-heading mb-8 text-center text-2xl font-bold tracking-tighter sm:text-3xl md:mb-16">
+        <h1 className="leading-tighter font-heading mb-8 text-center text-xl font-bold tracking-tighter sm:text-2xl md:mb-12">
           News
         </h1>
       </header>
-      <div className="flex flex-col gap-8 p-4 md:p-0">
+      <div className="flex flex-col gap-6 p-2 md:p-0">
         {news.map(({ slug, title, image, description }: { slug: string, title: string, image: string, description: string }) => (
-          <div key={slug} className="flex flex-col sm:flex-row overflow-hidden rounded-xl border border-slate-200 shadow-lg dark:border-slate-800">
+          <div key={slug} className="flex flex-col overflow-hidden rounded-lg border border-slate-200 shadow-md sm:flex-row dark:border-slate-800">
             <div className="sm:w-1/3 md:w-2/5 flex-shrink-0">
-              <Image width={650} height={340} alt={title} src={`${image}`} className="h-full w-full object-cover" />
+              <Image width={560} height={300} alt={title} src={`${image}`} className="h-full w-full object-cover" />
             </div>
-            <div className="flex flex-col justify-center p-6 sm:w-2/3 md:w-3/5">
-              <h2 className="mb-3 text-xl font-bold">{title}</h2>
-              {description && <p className="text-slate-600 dark:text-slate-400">{description}</p>}
+            <div className="flex flex-col justify-center p-4 sm:w-2/3 md:w-3/5 sm:p-5">
+              <h2 className="mb-2 text-lg font-bold">{title}</h2>
+              {description && <p className="text-sm text-slate-600 dark:text-slate-400">{description}</p>}
             </div>
           </div>
         ))}
