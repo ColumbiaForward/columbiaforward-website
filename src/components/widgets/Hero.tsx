@@ -55,7 +55,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             )}
 
             {title && (
-              <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
+              <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl animate-fade-in-up-1">
                 {/* Gradient text effect */}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
                   {title}
@@ -65,17 +65,21 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
 
             <div className="mx-auto max-w-3xl">
               {subtitle && (
-                <p className="mb-8 text-xl font-normal text-slate-200">
+                <p className="mb-8 text-xl font-normal text-slate-200 animate-fade-in-up-2">
                   {subtitle}
                 </p>
               )}
 
               <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
                 {callToAction && (
-                  <CTA callToAction={callToAction} linkClass="btn btn-primary" />
+                  <div className="animate-fade-in-up-3">
+                    <CTA callToAction={callToAction} linkClass="btn btn-primary" />
+                  </div>
                 )}
                 {callToAction2 && (
-                  <CTA callToAction={callToAction2} linkClass="btn bg-white text-gray-900 hover:bg-gray-100" />
+                  <div className="animate-fade-in-up-4">
+                    <CTA callToAction={callToAction2} linkClass="btn bg-white text-gray-900 hover:bg-gray-100" />
+                  </div>
                 )}
               </div>
             </div>
