@@ -79,7 +79,7 @@ const Header = () => {
         {/* Logo Section */}
         <div className={`flex justify-between py-3 md:py-0 ${isToggleMenuOpen ? '' : ''}`}>
           <Link
-            className="flex items-center"
+            className="flex items-center animate-fade-in-up-5"
             href="/"
             onClick={() =>
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
@@ -96,7 +96,7 @@ const Header = () => {
         <nav
           className={`${isToggleMenuOpen ? 'block' : 'hidden'} w-full md:w-auto ${
             position === 'right' ? 'justify-end' : position === 'left' ? 'justify-start' : 'justify-center'
-          } dark:text-slate-200 md:mx-6 md:flex md:items-center`}
+          } dark:text-slate-200 md:mx-6 md:flex md:items-center animate-fade-in-up-6`}
           aria-label="Main navigation"
         >
           <ul
@@ -165,7 +165,7 @@ const Header = () => {
             {/* ToggleDarkMode removed from here */}
             {showRssFeed && (
               <Link
-                className="text-muted inline-flex items-center rounded-full p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="text-muted inline-flex items-center rounded-full p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700 animate-fade-in-up-7"
                 aria-label="RSS Feed"
                 href=""
               >
@@ -173,7 +173,7 @@ const Header = () => {
               </Link>
             )}
             {actions && actions.length > 0 && (
-              <div className="ml-4 rtl:ml-0 rtl:mr-4 flex w-max flex-wrap justify-end">
+              <div className="ml-4 rtl:ml-0 rtl:mr-4 flex w-max flex-wrap justify-end animate-fade-in-up-8">
                 {actions.map((callToAction, index) => (
                   <CTA
                     key={`item-action-${index}`}
